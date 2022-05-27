@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .header {
+        background-color: black;
+      }
+      .headline {
+        color: white;
+        padding: 5px;
+        text-align: center;
+      }
+      .question {
+        text-align: center;
+      }
+      .answers {
+        text-align: center;
+      }
+      .radio-item {
+        display: inline-block;
+        width: 130px;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .bton {
+        margin-top: 25px;
+      }
+      .bton input[type="button"] {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: rgb(132, 88, 214);
+        border: none;
+        color: white;
+      }
+    </style>
+
+    <title>HTML Semantics</title>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <p class="headline">Quiz on Important Facts</p>
+    </header>
+    <main>
+      <section>
+        <div>
+          <p class="question">
+            Which one of these is a JavaScript package manager?
+          </p>
+        </div>
+        <div class="answers">
+          <form>
+            <div class="radio-item">
+              <input type="radio" name="a" value="node.js" />
+              <label for="node.js">a : Node.js</label>
+            </div>
+            <br />
+            <div class="radio-item">
+              <input type="radio" name="a" value="typescript" />
+              <label for="typescript">b : TypeScript</label>
+            </div>
+            <br />
+            <div class="radio-item">
+              <input type="radio" name="a" value="npm" />
+              <label for="npm">c : npm</label>
+            </div>
+            <br />
+            <div class="bton">
+              <input type="button" class="previous" value="Previous Question" />
+              <input type="button" class="next" value="Next Question" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
