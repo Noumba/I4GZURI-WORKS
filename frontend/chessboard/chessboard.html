@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessboard with HTML-CSS</title>
+
+    <style>
+      body {
+        background: #e8e7de;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .chessboard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 100vh;
+        margin: 0 auto;
+        margin-top: 4em;
+      }
+
+      .col {
+        justify-content: center;
+        border: 1px solid rgb(65, 59, 59);
+        border-radius: 4px;
+        background: #c7bfb3;
+      }
+      .white {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        font-size: 1.3em;
+        height: 5em;
+        width: 5em;
+        color: #000;
+      }
+
+      .black {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        color: white;
+        font-size: 1.3em;
+        width: 5em;
+        height: 5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="chessboard">
+      <!-- 1st section -->
+      <section class="col">
+        <div class="black">&#9820;</div>
+        <div class="white">&#9823;</div>
+        <div class="black"></div>
+        <div class="white">&#9817;</div>
+        <div class="black">&#9814;</div>
+      </section>
+      <!-- 2nd section -->
+      <section class="col">
+        <div class="white">&#9822;</div>
+        <div class="black">&#9823;</div>
+        <div class="white"></div>
+        <div class="black">&#9817;</div>
+        <div class="white">&#9816;</div>
+      </section>
+      <!-- 3rd section -->
+      <section class="col">
+        <div class="black">&#9821;</div>
+        <div class="white">&#9823;</div>
+        <div class="black"></div>
+        <div class="white">&#9817;</div>
+        <div class="black">&#9815;</div>
+      </section>
+      <!-- 4th section -->
+      <section class="col">
+        <div class="white">&#9819;</div>
+        <div class="black">&#9823;</div>
+        <div class="white"></div>
+        <div class="black">&#9817;</div>
+        <div class="white">&#9813;</div>
+      </section>
+      <!-- 5th section -->
+      <section class="col">
+        <div class="black">&#9818;</div>
+        <div class="white">&#9823;</div>
+        <div class="black"></div>
+        <div class="white">&#9817;</div>
+        <div class="black">&#9812;</div>
+      </section>
+    </main>
+  </body>
+  <!-- 5x5 chessboard by Viashima Collins -->
+</html>

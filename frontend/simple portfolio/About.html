@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Website</title>
+        <style>
+            nav {
+                text-align: center;
+                width: 100%;
+                background-color: #333;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0%;
+                overflow: hidden;
+                background-color: #333;
+                display: inline-block;
+                width: 60%;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                margin-left: 5px;
+                margin-right: 40px;
+                margin-bottom: 0%;
+                width: 60%;
+            }
+
+            li a:hover {
+                background-color: #111;
+            }
+
+            .intro-content {
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding-right: 0%;
+            }
+
+            .intro-text h3 {
+                font-family: "Roboto", sans-serif;
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 1.333;
+                color: #cf1767;
+                margin-top: 0;
+            }
+
+            .intro-text h1 {
+                font-size: 3.8rem;
+                font-weight: 500;
+                line-height: 1.179;
+                margin-top: 0;
+            }
+
+            .intro-text {
+                margin-top: 10%;
+            }
+
+            body {
+                background-color: rgb(248, 238, 238);
+            }
+
+            .img {
+                float: right;
+                margin-right: 0%;
+            }
+
+            .s-about {
+                padding-top: 1.0rem;
+                padding-bottom: 1.0rem;
+                background-color: #ffffff;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .about-me__text {
+                -webkit-columns: 2 360px;
+                -moz-columns: 2 360px;
+                columns: 2 360px;
+                column-gap: 54px;
+            }
+
+            .list_items {
+                -webkit-columns: 2 160px;
+                -moz-columns: 2 160px;
+                columns: 2 160px;
+                column-gap: 24px;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: grey;
+                color: white;
+                text-align: center;
+            }
+
+            .linkbutton {
+                display: inline-block;
+                padding: 15px 20px 15px 20px;
+                margin-bottom: 70px;
+                background: #8a110b;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="active" href="about.html">Home</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="intro" class="s-intro">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h3>Hello, I'm Noumba Leonard</h3>
+                        <h1>
+                            Computer Scientist <br />
+                            and Software Developer <br />
+                            Based In Cameroon.
+                        </h1>
+                    </div>
+                    <img class="img" src="vinci.jpg" alt="" srcset="" height="80%" width="46%" />
+                </div>
+            </section>
+            <section class="s-about">
+                <div class="about-me">
+                    <div class="">
+                        <div class="">
+                            <h2 class="section-heading">About Me</h2>
+                        </div>
+                    </div>
+
+                    <div class="about-me__content">
+                        <div class="about-me__text">
+                            <p class="">
+                                I am a Passionate Software Developer and Computer Science
+                                Researcher of various technical ideas. I have been a Software
+                                Developer for almost 1 years and currently work for a Leading
+                                Tech Organization. I have a Bachelor's Degree in Computer
+                                Science from the University of Buea Cameroon.
+                            </p>
+
+                            <p>
+                                Hobbies
+                            <ol>
+                                <li>Home Science Experiments</li><br>
+                                <li>Computer Programming</li><br>
+                                <li>Football and Dancing</li><br>
+                                <li>Travelling and Cooking</li>
+                            </ol>
+                            </p><br>
+
+                            <p>
+                            <h4>Priorities</h4>
+                            <ul class="list_items" style="list-style-type: circle;">
+                                <li>Family</li><br>
+                                <li>Health</li><br>
+                                <li>Work</li><br>
+                                <li>Finance</li><br>
+                                <li>Relationship</li><br>
+                                <li>Mariage</li>
+
+                            </ul>
+                            </p>
+
+                            <p>
+                            <h4>Skills</h4>
+                            <ul class="list_items" style="list-style-type: square;">
+                                <li>HTML/HTML5</li><br>
+                                <li>CSS/CSS3</li><br>
+                                <li>JavaScript</li><br>
+                                <li>Responsive Builds</li><br>
+                                <li>Mobile Web Apps</li><br>
+                                <li>Flutter & Dart</li>
+
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a class="linkbutton" href="contact.html">
+                    Contact Me
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Noumba Leonard <br> n.leonardeinstein@gmail.com</p>
+        </footer>
+    </body>
+
+</html>
