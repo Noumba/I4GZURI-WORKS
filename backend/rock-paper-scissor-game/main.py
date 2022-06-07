@@ -13,10 +13,12 @@ while play_outcome == "tie":
 
     computer = random.choice(choices)
 
-    player = None
+    player = input(
+        "Select game choice: R, P, or S? (Rock, Paper, Scissors): ").upper()
 
     while player not in choices:
-        player = input("R, P, or S? (Rock, Paper, Scissors): ").upper()
+        player = input(
+            "Selected choice Invalid, please select again R, P, or S? (Rock, Paper, Scissors): ").upper()
 
     if player == computer:
         print("Player: ", mapping_choice[player],
