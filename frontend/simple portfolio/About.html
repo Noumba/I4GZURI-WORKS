@@ -21,6 +21,7 @@
                 background-color: #333;
                 display: inline-block;
                 width: 60%;
+
             }
 
             li {
@@ -68,6 +69,7 @@
 
             .intro-text {
                 margin-top: 10%;
+
             }
 
             body {
@@ -77,6 +79,8 @@
             .img {
                 float: right;
                 margin-right: 0%;
+                height: 80%;
+                width: 46%;
             }
 
             .s-about {
@@ -122,6 +126,38 @@
                 font-size: 18px;
             }
 
+            @media only screen and (max-width: 767px) {
+                .intro-content {
+                    display: block;
+                }
+
+                .intro-text h1 {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    line-height: 1.0;
+                    margin-top: 0;
+                }
+
+                .intro-text h3 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    line-height: 1.0;
+
+                }
+
+                .intro-text {
+                    margin-top: 5%;
+                }
+
+                .img {
+                    float: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 70%;
+                    width: 100%;
+                }
+            }
+
         </style>
     </head>
 
@@ -132,7 +168,7 @@
                     <li><a class="active" href="about.html">Home</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Register</a></li>
+                    <li><a href="signUp.html">Register</a></li>
                 </ul>
             </nav>
         </header>
@@ -147,7 +183,7 @@
                             Based In Cameroon.
                         </h1>
                     </div>
-                    <img class="img" src="vinci.jpg" alt="" srcset="" height="80%" width="46%" />
+                    <img class="img" src="vinci.jpg" alt="" srcset="" />
                 </div>
             </section>
             <section class="s-about">
@@ -170,7 +206,7 @@
 
                             <p>
                                 Hobbies
-                            <ol>
+                            <ol class="priority">
                                 <li>Home Science Experiments</li><br>
                                 <li>Computer Programming</li><br>
                                 <li>Football and Dancing</li><br>
@@ -208,7 +244,7 @@
                 </div>
             </section>
             <section>
-                <a class="linkbutton" href="contact.html">
+                <a class="linkbutton" href="Contact.html">
                     Contact Me
                 </a>
             </section>
