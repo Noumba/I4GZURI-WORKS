@@ -1,7 +1,6 @@
 import random
 
-player_score = 0
-computer_score = 0
+
 play_outcome = "tie"
 mapping_choice = {
     "R": "Rock",
@@ -57,9 +56,3 @@ while play_outcome == "tie":
                   " : ", "CPU: ", mapping_choice[computer])
             print("You win")
             play_outcome = "end"
-
-
-# if computer_score > player_score:
-#     print("Computer Wins")
-# elif player_score > computer_score:
-#     print("You Win")
