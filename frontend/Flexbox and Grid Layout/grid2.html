@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Layout</title>
+    </head>
+    <style>
+        #background-color {
+            background-color: hsl(147, 100%, 13%);
+            width: 80%;
+            padding: 50px;
+            border-radius: 5px;
+            opacity: 0.9;
+            box-shadow: 10px 10px 5px hsl(147, 100%, 13%);
+        }
+
+        .grid {
+            display: flex;
+            margin-bottom: 5px;
+            height: 240px;
+            width: 70%;
+
+        }
+
+        .grid1 {
+            background-color: blue;
+            padding: 30px;
+            width: 70%;
+            margin: 5px;
+        }
+
+        .grid2 {
+            background-color: orange;
+            padding: 50px;
+            width: 30%;
+            margin: 5px;
+        }
+
+        .grid3 {
+            background-color: blue;
+            padding: 30px;
+            width: 40%;
+            margin: 5px;
+        }
+
+        .grid4 {
+            width: 60%;
+            margin: 5px;
+
+        }
+
+        .grid5 {
+            background-color: cadetblue;
+            width: auto;
+            padding: 55px;
+            margin: 0px 0px 0px 0px;
+
+        }
+
+        .grid6 {
+            background-color: cadetblue;
+            width: auto;
+            padding: 55px;
+            margin: 10px 0px 0px 0px;
+
+        }
+
+    </style>
+
+    <body>
+        <div id="background-color">
+            <div class="grid">
+                <div class="grid1"></div>
+                <div class="grid2"></div>
+            </div>
+            <div class="grid">
+                <div class="grid3"></div>
+                <div class="grid4">
+                    <div class="grid5"></div>
+                    <div class="grid6"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

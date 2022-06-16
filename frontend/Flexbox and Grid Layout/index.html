@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlexBox Layout</title>
+    </head>
+    <style>
+        @font-face {
+            font-family: lexendDeca;
+            src: url(LexendDeca-VariableFont_wght.ttf);
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: bigShoulders;
+            src: url(BigShouldersDisplay-VariableFont_wght.ttf);
+            font-weight: 700;
+        }
+
+        .flex-container {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            padding-left: 11%;
+            padding-right: 11%;
+
+        }
+
+        .flex-item1 {
+            background-color: hsl(31, 77%, 52%);
+            padding: 6%;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            box-shadow: 5px;
+        }
+
+        .flex-item2 {
+            background-color: hsl(184, 100%, 22%);
+            padding: 6%;
+        }
+
+        .flex-item3 {
+            background-color: hsl(179, 100%, 13%);
+            padding: 6%;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        body {
+            font-size: 15px;
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .button {
+            background-color: hsl(0, 0%, 95%);
+            padding: 15px;
+            width: 70%;
+            border-radius: 30px;
+            border: 1px solid hsl(0, 0%, 95%);
+            font-weight: 700;
+            font-family: lexendDeca;
+        }
+
+        .button:active {
+            background-color: transparent;
+            color: hsl(0, 0%, 95%);
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: transparent;
+            color: hsl(0, 0%, 95%);
+            cursor: pointer;
+        }
+
+        .btn-sedans {
+            color: hsl(31, 77%, 52%);
+        }
+
+        .btn-suv {
+            color: hsl(184, 100%, 22%);
+        }
+
+        .btn-luxury {
+            color: hsl(179, 100%, 13%);
+        }
+
+        h1 {
+            color: hsl(0, 0%, 95%);
+            font-family: bigShoulders;
+        }
+
+        p {
+
+            color: hsla(0, 0%, 100%, 0.75);
+            line-height: 25px;
+            font-family: lexendDeca;
+
+        }
+
+        .item-button {
+            padding-top: 25%;
+        }
+
+        @media (max-width: 675px) {
+            .flex-container {
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                padding-left: 1%;
+                padding-right: 1%;
+
+            }
+
+            .flex-item1 {
+                background-color: hsl(31, 77%, 52%);
+                padding: 20%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 0px;
+
+            }
+
+            .flex-item2 {
+                background-color: hsl(184, 100%, 22%);
+                padding: 20%;
+            }
+
+            .flex-item3 {
+                background-color: hsl(179, 100%, 13%);
+                padding: 20%;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-top-right-radius: 0px;
+            }
+
+            body {
+                font-size: 15px;
+                background-color: hsl(0, 0%, 95%);
+            }
+
+            .item-button {
+                padding-top: 25%;
+            }
+        }
+
+    </style>
+
+    <body>
+        <div class="flex-container">
+            <div class="flex-item1">
+                <div class="item-imag">
+                    <img src="./images/icon-sedans.svg" alt="">
+                </div>
+                <div class="item-name">
+                    <h1>SEDANS</h1>
+                </div>
+                <div class="item-description">
+                    <p>Chose a sedan for its affordability and excelent fuel economy. Ideal for cruising in the
+                        city or on your next road trip.</p>
+                </div>
+                <div class="item-button"><button class="button btn-sedans">Learn More</button></div>
+            </div>
+            <div class="flex-item2">
+                <div>
+                    <img src="./images/icon-suvs.svg" alt="">
+                </div>
+                <div>
+                    <h1>SUV</h1>
+                </div>
+                <div>
+                    <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next
+                        family vacation and off-road adventures.</p>
+                </div>
+                <div class="item-button"><button class="button btn-suv">Learn More</button></div>
+            </div>
+            <div class="flex-item3">
+                <div>
+                    <img src="./images/icon-luxury.svg" alt="">
+                </div>
+                <div>
+                    <h1>LUXURY</h1>
+                </div>
+                <div>
+                    <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a
+                        luxury rental and arrive in style</p>
+                </div>
+                <div class="item-button"><button class="button btn-luxury">Learn More</button></div>
+            </div>
+        </div>
+    </body>
+
+</html>

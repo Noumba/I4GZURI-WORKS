@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsiveness and MediaQueries</title>
+    </head>
+    <style>
+        @font-face {
+            font-family: poppins;
+            src: url(Poppins-Regular.ttf);
+        }
+
+        body {
+            background-image: url('./images/bg-intro-desktop.png');
+            background-color: hsl(0, 100%, 74%);
+            font-size: 16px;
+            font-family: poppins;
+        }
+
+        .container {
+            display: flex;
+            padding: 8%;
+            justify-content: space-around;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 17px;
+            padding-left: 25px;
+            border: 1px solid hsl(246, 25%, 77%);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 16px;
+            margin-bottom: 0px;
+            resize: vertical;
+            font-family: poppins;
+            font-weight: 600;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus,
+        input[type=email]:focus {
+            border: 1px solid hsl(248, 32%, 49%);
+            outline: none;
+        }
+
+        input[type=submit] {
+            background-color: hsl(154, 59%, 51%);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+            font-family: poppins;
+            font-weight: 600;
+            box-shadow: 0px 3px 1px hsl(249, 10%, 26%);
+            margin-top: 15px;
+        }
+
+
+
+        input[type=submit]:hover {
+            background-color: hsl(246, 25%, 77%);
+        }
+
+        .err {
+            border: 1px solid hsl(0, 100%, 74%) !important;
+            background-image: url('./images/icon-error.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-position: 96% 50%;
+            vertical-align: middle;
+        }
+
+
+        .err::placeholder {
+            color: transparent;
+        }
+
+        .form-container {
+            border-radius: 5px;
+            background-color: white;
+            padding: 20px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .input-container {
+            width: 100%;
+        }
+
+        .try-it-container {
+            border: 2px solid hsl(248, 32%, 49%);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: auto;
+            padding-bottom: auto;
+            margin-bottom: 20px;
+            background-color: hsl(248, 32%, 49%);
+            font-family: poppins;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0px 7px 2px hsl(246, 25%, 77%);
+
+        }
+
+        .left-container {
+            padding: 5%;
+            width: 40%;
+            padding-top: 12%;
+        }
+
+        .right-container {
+            width: 60%;
+        }
+
+        .left-container>h1 {
+            font-weight: 700;
+            color: white;
+            font-size: 34px;
+            line-height: 40px;
+        }
+
+        .left-container>div>p {
+            font-weight: 400;
+            font-size: 12px;
+            color: white;
+            line-height: 20px;
+
+        }
+
+        .span-text {
+            font-weight: 400;
+            color: hsl(246, 25%, 77%);
+        }
+
+        .emsg {
+            text-align: right;
+            margin-top: 0;
+            font-size: 12px;
+            font-family: poppins;
+            color: hsl(0, 100%, 74%);
+            font-weight: 600;
+        }
+
+        .terms-container {
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+        }
+
+        .terms-text {
+            font-size: 10px;
+            font-weight: 600;
+            color: hsl(246, 25%, 77%);
+        }
+
+        .terms-span {
+            color: hsl(0, 100%, 74%);
+            font-size: 12px;
+        }
+
+
+
+        @media only screen and (max-width: 600px) {
+
+            body {
+                background-image: url('./images/bg-intro-mobile.png');
+                background-color: hsl(0, 100%, 74%);
+                font-size: 16px;
+                font-family: poppins;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                padding: 0%;
+                justify-content: space-around;
+            }
+
+            .right-container {
+                margin-bottom: 5%;
+                width: 80%;
+                margin-left: 5%;
+                margin-right: 5%;
+
+            }
+
+            .form-container {
+                width: 100%;
+
+            }
+
+            .try-it-container {
+                width: 100%;
+
+            }
+
+            .left-container {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .left-container>h1 {
+                font-weight: 700;
+                color: white;
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            .left-container>div>p {
+                font-weight: 400;
+                font-size: 14px;
+                color: white;
+                line-height: 20px;
+            }
+
+        }
+
+    </style>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="left-container">
+
+                    <h1>
+                        Learn to code by watching others
+                    </h1>
+
+                    <div>
+                        <p>
+                            See how experienced developers solve problems in real-time. Watching scripted tutorials is
+                            great but understanding how develpers think is invaluable.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="try-it-container">
+                        <p>Try it free 7 days <span class="span-text">then $20/mo. thereafter</span></p>
+                    </div>
+                    <div class="form-container">
+                        <form action="" onsubmit="return check()" novalidate>
+
+
+                            <input class="" type="text" id="fname" name="firstname" placeholder="First Name" required>
+                            <div id="cfname" class="emsg"></div>
+
+                            <input class="" type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                            <div id="clname" class="emsg"></div>
+
+                            <input class="" type="email" id="email" name="email" placeholder="Email Address" required>
+                            <div id="cemail" class="emsg"></div>
+
+                            <input class="" type="password" id="password" name="password" placeholder="Password"
+                                required>
+                            <div id="cpassword" class="emsg"></div>
+
+                            <input type="submit" value="CLAIM YOUR FREE TRIAL">
+                        </form>
+                        <div class="terms-container">
+                            <p class="terms-text">
+                                By clicking the button, you are agreeing to our <span class="terms-span">Terms and
+                                    Services</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- (C) FORM CHECK -->
+        <script>
+            function check() {
+
+                var valid = true, error = "", field = "";
+
+                // FIRST NAME
+                field = document.getElementById("fname");
+                error = document.getElementById("cfname");
+                if (!field.checkValidity()) {
+                    valid = false;
+                    field.classList.add("err");
+
+                    error.innerHTML = "First Name cannot be empty\r\n";
+                } else {
+                    field.classList.remove("err");
+                    error.innerHTML = "";
+                }
+
+                // LAST NAME
+                field = document.getElementById("lname");
+                error = document.getElementById("clname");
+                if (!field.checkValidity()) {
+                    valid = false;
+                    field.classList.add("err");
+                    error.innerHTML = "Last Name cannot be empty\r\n";
+                } else {
+                    field.classList.remove("err");
+                    error.innerHTML = "";
+                }
+
+                //Email
+                field = document.getElementById("email");
+                error = document.getElementById("cemail");
+                if (!field.checkValidity()) {
+                    valid = false;
+                    field.classList.add("err");
+                    error.innerHTML = "Looks like this is not an email\r\n";
+                } else {
+                    field.classList.remove("err");
+                    error.innerHTML = "";
+                }
+
+
+                // Password
+                field = document.getElementById("password");
+                error = document.getElementById("cpassword");
+                if (!field.checkValidity()) {
+                    valid = false;
+                    field.classList.add("err");
+                    error.innerHTML = "Password cannot be empty\r\n";
+                } else {
+                    field.classList.remove("err");
+                    error.innerHTML = "";
+                }
+
+                // (C4) RESULT
+                return valid;
+            }
+        </script>
+    </body>
+
+</html>
