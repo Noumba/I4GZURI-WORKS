@@ -1,14 +1,14 @@
 let myName = "Noumba Leonardo";
-let age = 25;
+let height = 170;
 let country = "Cameroon";
 
 document.write(
   "My name is " +
     myName +
     " <br/>" +
-    "I am " +
-    age +
-    " Years old." +
+    "My height is " +
+    height +
+    " cm." +
     "</br/>" +
     "I am from " +
     country +
